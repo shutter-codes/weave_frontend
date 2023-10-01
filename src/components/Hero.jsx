@@ -1,7 +1,5 @@
 import React from 'react'
-import hero1 from '../images/hero-abs-1.png'
-import hero2 from '../images/hero-abs-2.png'
-import banner from '../images/hero-banner.png'
+
 function Hero() {
   return (
     <div>
@@ -25,7 +23,7 @@ function Hero() {
     </div>
     <figure className="hero-banner">
       <img
-        src={banner}
+        src="https://res.cloudinary.com/dctlzmkwh/image/upload/v1696098739/Weave_Images/hero-banner_sto0l0.png"
         width={500}
         height={500}
         loading="lazy"
@@ -33,7 +31,7 @@ function Hero() {
         className="w-100"
       />
       <img
-        src={hero1}
+        src="https://res.cloudinary.com/dctlzmkwh/image/upload/v1696098738/Weave_Images/hero-abs-1_f5mv1p.png"
         width={318}
         height={352}
         loading="lazy"
@@ -41,7 +39,7 @@ function Hero() {
         className="abs-img abs-img-1"
       />
       <img
-        src={hero2}
+        src="https://res.cloudinary.com/dctlzmkwh/image/upload/v1696098738/Weave_Images/hero-abs-2_m7x1qv.png"
         width={160}
         height={160}
         loading="lazy"
