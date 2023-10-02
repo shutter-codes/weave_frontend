@@ -3,7 +3,7 @@
 \*-----------------------------------*/
 
 /**
- * copyright 2022 codewithsadee
+ * copyright 2023 Naitik Sharma
  */
 
 
@@ -461,7 +461,7 @@
   
   .category :is(.section-subtitle, .section-title) { text-align: center; }
   
-  .category .section-title { margin-block-end: 60px; }
+  .category .section-title { margin-block-end: 30px; }
   
   .category-card {
     --title-color: var(--space-cadet-2);
@@ -806,7 +806,7 @@
     text-align: center;
   }
   
-  .newsletter .section-title { margin-block-end: 30px; }
+  .newsletter .section-title { margin-block-end: 10px; }
   
   .input-wrapper { position: relative; }
   
@@ -842,7 +842,7 @@
   
   .footer-top {
     display: grid;
-    gap: 60px;
+    gap: 30px;
     padding-block: 60px 50px;
   }
   
@@ -1383,6 +1383,6 @@
      * FOOTER
      */
   
-    .footer-top { padding-block: 120px 80px; }
+    .footer-top { padding-block: 80px 40px; }
   
   }

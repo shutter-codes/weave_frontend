@@ -94,12 +94,7 @@ function Footer() {
               <span className="span">Pricing Plan</span>
             </a>
           </li>
-          <li>
-            <a href="#" className="footer-link">
-              <ion-icon name="chevron-forward" aria-hidden="true" />
-              <span className="span">Instructor Profile</span>
-            </a>
-          </li>
+          
           <li>
             <a href="#" className="footer-link">
               <ion-icon name="chevron-forward" aria-hidden="true" />
@@ -126,34 +121,29 @@ function Footer() {
           <li className="footer-item">
             <ion-icon name="location-outline" aria-hidden="true" />
             <address className="footer-link">
-              275 Quadra Street Victoria Road, New York
+             Arya College of Engineering and IT
             </address>
           </li>
           <li className="footer-item">
             <ion-icon name="call" aria-hidden="true" />
-            <a href="tel:+13647657839" className="footer-link">
-              + 1 (364) 765-7839
+            <a href="tel:+91" className="footer-link">
+             +91 7003278402
             </a>
           </li>
-          <li className="footer-item">
-            <ion-icon name="call" aria-hidden="true" />
-            <a href="tel:+13647657840" className="footer-link">
-              + 1 (364) 765-7840
-            </a>
-          </li>
+        
           <li className="footer-item">
             <ion-icon name="mail-outline" aria-hidden="true" />
             <a href="mailto:contact@eduhome.com" className="footer-link">
-              contact@eduhome.com
+              contact@weave.com
             </a>
           </li>
         </ul>
       </div>
       <div className="footer-bottom">
         <p className="copyright">
-          Copyright 2022 EduHome. All Rights Reserved by{" "}
+          Copyright 2023 Weave. All Rights Reserved by{" "}
           <a href="#" className="copyright-link">
-            codewithsadee
+           WhyNaitik
           </a>
         </p>
       </div>

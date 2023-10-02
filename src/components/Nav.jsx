@@ -1,96 +1,127 @@
-import React from 'react'
+import React from "react";
+import { CloseOutline, PersonOutline, SearchOutline,MenuOutline } from "react-ionicons";
 
 function Nav() {
   return (
-  
-       <header class="header" data-header>
-    <div class="container">
+    <header class="header" data-header>
+      <div class="container">
+        <h1>
+          <a href="#" class="logo">
+            Weave
+          </a>
+        </h1>
 
-      <h1>
-        <a href="#" class="logo">Weave</a>
-      </h1>
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <a href="#" class="logo">
+              EduHome
+            </a>
 
-      <nav class="navbar" data-navbar>
+            <button
+              class="nav-close-btn"
+              aria-label="Close menu"
+              data-nav-toggler
+            >
+              <CloseOutline color={"#00000"} height="20px" width="20px" />
+            </button>
+          </div>
 
-        <div class="navbar-top">
-          <a href="#" class="logo">EduHome</a>
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link" data-nav-toggler>
+                Home
+              </a>
+            </li>
 
-          <button class="nav-close-btn" aria-label="Close menu" data-nav-toggler>
-            <ion-icon name="close-outline"></ion-icon>
+            <li class="navbar-item">
+              <a href="#about" class="navbar-link" data-nav-toggler>
+                About
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#courses" class="navbar-link" data-nav-toggler>
+                Courses
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#event" class="navbar-link" data-nav-toggler>
+                Event
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-toggler>
+                Blog
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#" class="navbar-link" data-nav-toggler>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="header-action-btn"
+            aria-label="Open search"
+            data-search-toggler
+          >
+            <SearchOutline color={"#00000"} height="20px" width="20px" />
+          </button>
+
+          <a href="#" class="header-action-btn login-btn">
+            <PersonOutline color={"#00000"} height="20px" width="20px" />
+
+            <span class="span">Login / Register</span>
+          </a>
+
+          <button
+            class="header-action-btn nav-open-btn"
+            aria-label="Open menu"
+            data-nav-toggler
+          >
+            <MenuOutline color={"#00000"} height="20px" width="20px" />
           </button>
         </div>
 
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <a href="#home" class="navbar-link" data-nav-toggler>Home</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#about" class="navbar-link" data-nav-toggler>About</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#courses" class="navbar-link" data-nav-toggler>Courses</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#event" class="navbar-link" data-nav-toggler>Event</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-toggler>Blog</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-toggler>Contact</a>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <div class="header-actions">
-
-        <button class="header-action-btn" aria-label="Open search" data-search-toggler>
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
-
-        <a href="#" class="header-action-btn login-btn">
-          <ion-icon name="person-outline" aria-hidden="true"></ion-icon>
-
-          <span class="span">Login / Register</span>
-        </a>
-
-        <button class="header-action-btn nav-open-btn" aria-label="Open menu" data-nav-toggler>
-          <ion-icon name="menu-outline"></ion-icon>
-        </button>
-
+        <div class="overlay" data-nav-toggler data-overlay></div>
       </div>
+      <div class="search-container" data-search-box>
+        <div class="container">
+          <button
+            class="search-close-btn"
+            aria-label="Close search"
+            data-search-toggler
+          >
+            <CloseOutline color={"#00000"} height="20px" width="20px" />
+          </button>
 
-      <div class="overlay" data-nav-toggler data-overlay></div>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              name="search"
+              placeholder="Search Here..."
+              aria-label="Search"
+              class="search-field"
+            />
 
-    </div>
-    <div class="search-container" data-search-box>
-    <div class="container">
-
-      <button class="search-close-btn" aria-label="Close search" data-search-toggler>
-        <ion-icon name="close-outline"></ion-icon>
-      </button>
-
-      <div class="search-wrapper">
-        <input type="search" name="search" placeholder="Search Here..." aria-label="Search" class="search-field"/>
-
-        <button class="search-submit" aria-label="Submit" data-search-toggler>
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
+            <button
+              class="search-submit"
+              aria-label="Submit"
+              data-search-toggler
+            >
+              <SearchOutline color={"#00000"} height="20px" width="20px" />{" "}
+            </button>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-  </header>
-   
-  )
+    </header>
+  );
 }
 
-export default Nav
+export default Nav;
