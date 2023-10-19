@@ -1,9 +1,26 @@
-import React from "react";
-import { CloseOutline, PersonOutline, SearchOutline,MenuOutline } from "react-ionicons";
+import React, {useState} from "react";
+import {
+  CloseOutline,
+  PersonOutline,
+  SearchOutline,
+  MenuOutline,
+} from "react-ionicons";
+import "../../src/assets/style.css";
 
 function Nav() {
+  
+const [nav, setNav] = useState(false)
+
+const changeBg = () =>{
+  if(window.addEventListener('scroll', (window.scrollY())) >= 80){
+    setNav(true)
+  } else{
+    setNav(false)
+  }
+}
+
   return (
-    <header class="header" data-header>
+    <header class={nav ? 'header active' : 'header'} data-header>
       <div class="container">
         <h1>
           <a href="#" class="logo">
@@ -35,7 +52,7 @@ function Nav() {
 
             <li class="navbar-item">
               <a href="#about" class="navbar-link" data-nav-toggler>
-                About
+                Quick Therapy
               </a>
             </li>
 

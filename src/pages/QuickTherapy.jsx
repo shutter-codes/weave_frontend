@@ -1,4 +1,3 @@
-import React from 'react'
 import Nav from '../components/Nav'
 import Quick from '../components/Quick_Therapy/Quick'
 import Footer from '../components/Footer'

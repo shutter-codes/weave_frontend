@@ -1,11 +1,27 @@
 import React from 'react'
+import { useState } from 'react'
+import { Outlet, Link } from "react-router-dom";
+
+
+
 
 function Quick() {
+    const [isHovering, setIsHovering] = useState(false);
+
+    const handleMouseEnter = () => {
+      setIsHovering(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovering(false);
+      };
+    
+  
   return (
     <>
      <>
       <div className="quickTherapyMain">
-        <section className="banner bg-cyan-600 w-[90%] h-[70vh] mt-3 mb-[4rem] mr-auto ml-auto rounded-[4rem]">
+        <section className="banner bg-cyan-600 w-[90%] h-[70vh] mt-[10rem] mb-[4rem] mr-auto ml-auto rounded-[4rem]">
           <div className="topic text-[5rem] font-bold flex justify-center text-center text-red-300">
             QUICK THERAPY
           </div>
@@ -18,7 +34,13 @@ function Quick() {
           </div>
           <ul className="grid grid-cols-2 gap-[4rem]">
             <li>
-              <div className="category-card ">
+              <div 
+                className="category-card" 
+                style={{backgroundColor: isHovering ? '#4166f5' : '#ededed'}} 
+                onMouseEnter={handleMouseEnter} 
+                onMouseLeave={handleMouseLeave}
+              >
+
                 <div className="card-icon">
                   <ion-icon name="briefcase-outline" />
                 </div>
@@ -30,9 +52,11 @@ function Quick() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam veniam incidunt libero ipsam cupiditate corporis.
                   </div>
-                  <button className=" bg-fuchsia-400 mt-[1rem] px-5 py-3 rounded-[0.5rem] hover:text-white hover:bg-black">
-                    Go somewhere
-                  </button>
+                  <Link to='/topics'>
+                    <button className=" bg-white mt-[1rem] text-black px-5 py-3 rounded-[0.5rem] shadow-lg">
+                        Go somewhere
+                    </button>
+                  </Link>
                 </div>
               </div>
             </li>
@@ -49,9 +73,11 @@ function Quick() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam veniam incidunt libero ipsam cupiditate corporis.
                   </div>
-                  <button className=" bg-fuchsia-400 mt-[1rem] px-5 py-3 rounded-[0.5rem] hover:text-white hover:bg-black">
-                    Go somewhere
-                  </button>
+                  <Link to='/topics'>
+                    <button className=" bg-white mt-[1rem] text-black px-5 py-3 rounded-[0.5rem] shadow-lg">
+                        Go somewhere
+                    </button>
+                  </Link>
                 </div>
               </div>
             </li>
@@ -68,7 +94,7 @@ function Quick() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam veniam incidunt libero ipsam cupiditate corporis.
                   </div>
-                  <button className=" bg-fuchsia-400 mt-[1rem] px-5 py-3 rounded-[0.5rem] hover:text-white hover:bg-black">
+                  <button className=" bg-white mt-[1rem] text-black px-5 py-3 rounded-[0.5rem] shadow-lg">
                     Go somewhere
                   </button>
                 </div>
@@ -87,9 +113,11 @@ function Quick() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam veniam incidunt libero ipsam cupiditate corporis.
                   </div>
-                  <button className=" bg-fuchsia-400 mt-[1rem] px-5 py-3 rounded-[0.5rem] hover:text-white hover:bg-black">
-                    Go somewhere
-                  </button>
+                  <Link to='/topics'>
+                    <button className=" bg-white mt-[1rem] text-black px-5 py-3 rounded-[0.5rem] shadow-lg">
+                        Go somewhere
+                    </button>
+                  </Link>
                 </div>
               </div>
             </li>
@@ -106,9 +134,11 @@ function Quick() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam veniam incidunt libero ipsam cupiditate corporis.
                   </div>
-                  <button className=" bg-fuchsia-400 mt-[1rem] px-5 py-3 rounded-[0.5rem] hover:text-white hover:bg-black">
-                    Go somewhere
-                  </button>
+                  <Link to='/topics'>
+                    <button className=" bg-white mt-[1rem] text-black px-5 py-3 rounded-[0.5rem] shadow-lg">
+                        Go somewhere
+                    </button>
+                  </Link>
                 </div>
               </div>
             </li>
@@ -125,9 +155,13 @@ function Quick() {
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Magnam veniam incidunt libero ipsam cupiditate corporis.
                   </div>
-                  <button className=" bg-fuchsia-400 mt-[1rem] px-5 py-3 rounded-[0.5rem] hover:text-white hover:bg-black">
-                    Go somewhere
-                  </button>
+
+                  <Link to='/topics'>
+                    <button className=" bg-white mt-[1rem] text-black px-5 py-3 rounded-[0.5rem] shadow-lg">
+                        Go somewhere
+                    </button>
+                  </Link>
+                
                 </div>
               </div>
             </li>

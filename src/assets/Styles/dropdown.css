@@ -1,0 +1,12 @@
+.dropDown{
+    width: 90%;
+    margin: 100px auto;
+
+}
+
+.dropdownBtn{
+   padding: 10px;
+   background-color: beige;
+   box-shadow: 2px 8px 10px rgb(195, 194, 194);
+
+}
