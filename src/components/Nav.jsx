@@ -3,7 +3,7 @@ import { CloseOutline, PersonOutline, SearchOutline,MenuOutline } from "react-io
 
 function Nav() {
   return (
-    <header class="header" data-header>
+    <header class="header" data-header >
       <div class="container">
         <h1>
           <a href="#" class="logo">

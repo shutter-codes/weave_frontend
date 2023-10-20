@@ -4,7 +4,7 @@ function ClubEvents() {
   return (
     <section className="section event" id="event" aria-label="event">
     <div className="container">
-      <p className="section-subtitle">Upcomming Event</p>
+      {/* <p className="section-subtitle">Upcomming Event</p> */}
       <h2 className="h2 section-title">Let’s Join Our Community</h2>
       <ul className="grid-list">
         <li>
@@ -20,16 +20,16 @@ function ClubEvents() {
               />
             </figure>
             <time className="badge" dateTime="2022-12-04">
-              04 Dec 2022
+              IOT
             </time>
             <div className="card-content">
               <address className="card-address">
                 <ion-icon name="location-outline" aria-hidden="true" />
-                <span className="span">Alpaca Way Anaheim, CA 92805</span>
+                <span className="span">ACEIT</span>
               </address>
               <h3 className="h3">
                 <a href="#" className="card-title">
-                  Innovation &amp; Technological Entrepreneurship Team
+                 INTELVERSE IOT & AI ML CLUB
                 </a>
               </h3>
               <a href="#" className="btn-link">

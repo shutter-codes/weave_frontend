@@ -14,7 +14,7 @@ function CourseCategories() {
             </div>
             <div>
               <h3 className="h3 card-title">
-                <a href="#">Personal Development</a>
+                <a href="#">Quick Therapy</a>
               </h3>
               <span className="card-meta">39 Course</span>
             </div>
@@ -27,7 +27,7 @@ function CourseCategories() {
             </div>
             <div>
               <h3 className="h3 card-title">
-                <a href="#">Human Research</a>
+                <a href="#">Aptitude</a>
               </h3>
               <span className="card-meta">24 Course</span>
             </div>
@@ -40,7 +40,7 @@ function CourseCategories() {
             </div>
             <div>
               <h3 className="h3 card-title">
-                <a href="#">Art &amp; Design</a>
+                <a href="#">Programming Language</a>
               </h3>
               <span className="card-meta">39 Course</span>
             </div>
@@ -53,7 +53,7 @@ function CourseCategories() {
             </div>
             <div>
               <h3 className="h3 card-title">
-                <a href="#">Business Management</a>
+                <a href="#">Resume Building</a>
               </h3>
               <span className="card-meta">39 Course</span>
             </div>
@@ -66,28 +66,14 @@ function CourseCategories() {
             </div>
             <div>
               <h3 className="h3 card-title">
-                <a href="#">Web Development</a>
+                <a href="#">Interview Experiences</a>
               </h3>
               <span className="card-meta">39 Course</span>
             </div>
           </div>
         </li>
-        <li>
-          <div className="category-card">
-            <div className="card-icon">
-              <ion-icon name="thumbs-up-outline" />
-            </div>
-            <div>
-              <h3 className="h3 card-title">
-                <a href="#">Lifestyle</a>
-              </h3>
-              <span className="card-meta">39 Course</span>
-            </div>
-          </div>
-        </li>
-        <li>
-         
-        </li>
+      
+    
       </ul>
     </div>
   </section>
