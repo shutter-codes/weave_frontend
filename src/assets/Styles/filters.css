@@ -1,0 +1,135 @@
+:root {
+    --primary: #10a37f;
+    --secondary: #075c48;
+    --white: #fff;
+    --primaryLight: #F8F8F8;
+    --primaryDark: #222222;
+    --secondaryLight: #dbdbdb;
+    --secondaryDark: #ececec;
+    --textColor: #7BBA81;
+    --special: #d2af7a;
+    --ternary: #c4c9d3;
+    --error: #e74c3c;
+
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3rem;
+}
+
+.filters .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+}
+
+
+.filter {
+    flex-shrink: 0;
+    text-transform: capitalize;
+    padding: 0.7rem 1.4rem;
+    background-color: var(--secondaryLight);
+    border-radius: 6px;
+    color: var(--primaryDark) !important;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.filter:active {
+    background-color: var(--white);
+}
+
+#filterButton {
+    margin-right: 3rem;
+    background-color: var(--white) !important;
+}
+
+
+.filters .left .sort-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--secondaryLight);
+   
+    padding: 0.7rem 1.4rem;
+    border-radius: 6px;
+    position: relative;
+
+}
+
+.left .sort-container::before {
+    content: "\ea4e";
+    font-family: remixicon !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: var(--primaryDark);
+    left: calc(100% - 2rem);
+    top: 50%;
+    pointer-events: none;
+    z-index: 99;
+}
+
+.left label,
+select#sortSelect {
+    margin-right: 0.5rem;
+    color: var(--primaryDark);
+    background-color: var(--secondaryLight);
+    font-size: 0.9rem;
+    font-weight: 700;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+
+}
+
+select#Sortselect option {
+    appearance: none;
+    padding: 0 1.3rem;
+
+}
+
+select#Sortselect span {
+    padding: 0 1rem;
+}
+
+
+select#sortSelect {
+    appearance: none;
+    position: relative;
+    min-width: 11rem;
+    padding-right: 1rem !important;
+}
+
+select#sortSelect option {
+    /* Style for all options */
+    background-color: var(--secondaryLight);
+    color: var(--primaryDark);
+    font-size: 0.9rem;
+    font-weight: 700;
+
+  
+}
+
+select#sortSelect option:checked {
+    /* Style for the selected option */
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+select#sortSelect option:hover {
+    background-color: transparent !important;
+    /* Set the background color to transparent or any other desired color */
+}

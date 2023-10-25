@@ -1,13 +1,21 @@
 import Nav from '../components/Nav'
-import Quick from '../components/Quick_Therapy/Quick'
 import Footer from '../components/Footer'
+import Filters from '../components/Quick_Therapy/Filters'
+import QuickFacts from '../components/Quick_Therapy/quickFacts'
+import QuickTherapyMain from '../components/Quick_Therapy/QuickTherapyMain'
+import Cards from '../components/Quick_Therapy/Cards'
+
 
 function QuickTherapy() {
   return (
    
    <>
     <Nav/>
-   <Quick/>
+    <Filters/>
+    <Cards/>
+    <QuickFacts/>
+  
+    {/* <Cards/> */}
    <Footer/>
    
    </>

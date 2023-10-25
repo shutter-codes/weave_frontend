@@ -1,0 +1,244 @@
+.cardCourses {
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 2.4rem;
+    padding-top: 0 !important;
+    width: 100%;
+    overflow-y: visible;
+    min-height: 40vh;
+}
+
+.cardCourses::-webkit-scrollbar {
+    display: none;
+}
+
+.cardCourses .card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 22vw;
+    min-width: 21rem;
+    padding-bottom: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white);
+    text-decoration: none;
+    color: var(--primaryDark);
+    border: 2px solid blue;
+}
+
+.cardCourses .card img {
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+}
+
+.cardCourses .card .body {
+    padding: 1rem;
+}
+
+.cardCourses .card .body p {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.cardCourses .card .body .tags {
+    display: flex;
+    gap: 1rem;
+    margin: 0.8rem 0;
+}
+
+.cardCourses .card .body .heading p {
+    font-weight: 600;
+    color: rgb(8, 8, 8);
+}
+
+.cardCourses .card .courseTags {
+    position: absolute;
+    top: 2%;
+    right: 2.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 3;
+}
+
+.cardCourses .card .tag {
+    font-size: 1.7rem;
+    border-radius: 7px;
+    padding: 3px 5px;
+    font-weight: 500;
+    background-color: var(--secondaryDark);
+    width: -moz-fit-content;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardCourses .card .instructor,
+.cardCourses .card .price {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(70px, 1fr));
+    padding: 0.9rem 0rem;
+    align-items: center;
+    justify-self: flex-end;
+}
+
+.cardCourses .card .instructor p,
+.cardCourses .card .price p {
+    font-size: 1.5rem;
+    /* opacity: 0.6; */
+    padding-left: 1.5rem;
+    font-weight: bolder;
+    color: black;
+}
+
+.cardCourses .card .instructor h1,
+.cardCourses .card .price h1 {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: black;
+    padding-left: 3rem;
+}
+
+.cardCourses .card .instructor {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.cardCourses .card .instructor h1 {
+    padding-left: 0;
+    text-align: center;
+}
+
+.cardCourses .card .price {
+    padding: 0.7rem 0rem;
+}
+
+.cardCourses .card .price h1 {
+    font-weight: 700;
+    color: var(--secondary);
+    font-size: 1.3rem;
+}
+
+.cardCourses .comingSoon::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(239, 239, 239, 0.11);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 4;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    pointer-events: none;
+}
+
+
+.cardCourses .comingSoon:hover {
+    cursor: not-allowed;
+}
+
+.cardCourses .comingSoon:hover::before {
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
+
+.cardCourses .comingSoon div:has(div > .comingSoonTag) {
+    width: 100%;
+}
+
+.cardCourses .comingSoon div:has(> .comingSoonTag) {
+    position: relative;
+    display: flex;
+}
+
+.cardCourses .comingSoon div:has(> .comingSoonTag) img {
+    height: 100% !important;
+    width: 100% !important;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.cardCourses .comingSoon div:has(> .comingSoonTag)::after {
+    content: " ";
+    height: -webkit-fill-available;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(72, 72, 72, 0.422);
+    -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+}
+
+.cardCourses .comingSoon .comingSoonTag {
+    font-size: 1.2rem !important;
+    width: initial;
+    padding: 5px 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    z-index: 5;
+    font-weight: 400;
+    white-space: nowrap;
+    background-color: var(--primaryDark) !important;
+    text-transform: capitalize;
+    color: var(--primaryLight) !important;
+}
+
+.cardCourses .allCourses {
+    margin-left: 3rem;
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    gap: 0.5rem;
+    opacity: 0.4;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.cardCourses .allCourses i {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.courses-cards-wrap {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: visible;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+}
+
+.courses-cards-wrap .loadingspinner {
+    pointer-events: none;
+    width: 2.5em;
+    height: 2.5em;
+    border: 0.4em solid transparent;
+    border-color: var(--ternary);
+    border-top-color: var(--primary);
+    border-radius: 50%;
+    animation: loadingspin 1s linear infinite;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+}
